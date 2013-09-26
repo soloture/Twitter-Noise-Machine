@@ -1,0 +1,2 @@
+MONGOALCHEMY_DATABASE = 'database'
+
