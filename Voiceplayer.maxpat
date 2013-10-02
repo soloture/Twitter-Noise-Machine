@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 240.0, 190.0, 794.0, 660.0 ],
+		"rect" : [ 83.0, 88.0, 794.0, 660.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -88,8 +88,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 408.0, 65.0, 329.0, 18.0 ],
-					"text" : "import /Users/SHan/Documents/2013_Thesis/TSM/tts1.mp3"
+					"patching_rect" : [ 408.0, 65.0, 358.0, 18.0 ],
+					"text" : "import /Users/SHan/Documents/2013_Thesis/TSM/TSM/tts1.mp3"
 				}
 
 			}
@@ -136,13 +136,12 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-3",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 48.0, 65.0, 286.0, 31.0 ],
-					"text" : "import /Users/SHan/Documents/2013_Thesis/TSM/tts.mp3"
+					"patching_rect" : [ 48.0, 65.0, 351.0, 18.0 ],
+					"text" : "import /Users/SHan/Documents/2013_Thesis/TSM/TSM/tts.mp3"
 				}
 
 			}
