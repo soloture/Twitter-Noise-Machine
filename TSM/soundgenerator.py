@@ -47,17 +47,31 @@ def getMashedText(results):
 			if z is y:
 				alphabet_count[z] += 1
 	
+		
+	
 	#summerize all counts
 	total = 0
 	for l in alphabet:
-		total += alphabet_count[l]	
+		total += alphabet_count[l]
+		if total is 0:
+			total = 1	
+		
+	for m in alphabet:
+		temp = alphabet_count[m]
+		alphabet_count[m] = temp * 100 / total
 	#Generate Mashed text
 	mashedtext = ''
 	for n in range(0,99):
 		slots = {}
 		for p in alphabet:
 			slots[p] = alphabet_count[p] * randint(1,100)
-			slots[','] = len(results) * randint(0,len(results) * 15)
+			if slots[p] is 0:
+				temp = randint(1,100)
+				if temp <= 10:
+					slots[p] = 1
+			slots[','] = (len(results)+1) * randint(0,100) / 5
+		
+		
 		mashedtext += max(slots.iteritems(),key=operator.itemgetter(1))[0]	
 			
 	
